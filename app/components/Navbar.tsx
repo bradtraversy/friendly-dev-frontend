@@ -16,7 +16,9 @@ const Navbar = () => {
         {/* Desktop Nav */}
         <div className='hidden md:flex items-center gap-6'>
           <div className='space-x-4 text-sm text-gray-300'>
-            <NavLink to='/'>Home</NavLink>
+            <NavLink className={({ isActive }) => (isActive ? '' : '')} to='/'>
+              Home
+            </NavLink>
             <NavLink to='/projects'>Projects</NavLink>
             <NavLink to='/blog'>Blog</NavLink>
             <NavLink to='/about'>About</NavLink>
