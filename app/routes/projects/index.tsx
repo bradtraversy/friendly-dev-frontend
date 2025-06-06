@@ -1,6 +1,9 @@
 import type { Route } from './+types/index';
+import type { Project } from '~/types';
 
-export async function loader({ request }: Route.LoaderArgs): Promise<any> {
+export async function loader({
+  request,
+}: Route.LoaderArgs): Promise<{ projects: Project[] }> {
   const res = await fetch('http://localhost:8000/projects');
   const data = await res.json();
 
@@ -8,7 +11,7 @@ export async function loader({ request }: Route.LoaderArgs): Promise<any> {
 }
 
 const ProjectsPage = ({ loaderData }: Route.ComponentProps) => {
-  const { projects } = loaderData;
+  const { projects } = loaderData as { projects: Project[] };
   console.log(projects);
 
   return (
