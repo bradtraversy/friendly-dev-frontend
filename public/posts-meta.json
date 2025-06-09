@@ -4,34 +4,34 @@
     "slug": "react-hooks-overview",
     "title": "A Practical Guide to React Hooks",
     "excerpt": "Understand useState, useEffect, and custom hooks with real-world examples.",
-    "date": "2025-03-01"
+    "date": "2025-03-01T00:00:00"
   },
   {
     "id": "2",
     "slug": "css-utility-vs-component",
     "title": "Utility-First vs Component-Based CSS",
     "excerpt": "Explore the pros and cons of Tailwind CSS vs traditional component styling.",
-    "date": "2025-02-25"
+    "date": "2025-02-25T00:00:00"
   },
   {
     "id": "3",
     "slug": "api-authentication-strategies",
     "title": "API Authentication Strategies Explained",
     "excerpt": "A breakdown of API auth methods like JWT, OAuth2, API keys, and more.",
-    "date": "2025-02-18"
+    "date": "2025-02-18T00:00:00"
   },
   {
     "id": "4",
     "slug": "writing-clean-code",
     "title": "Writing Clean and Maintainable Code",
     "excerpt": "Best practices to improve code readability, structure, and reusability.",
-    "date": "2025-02-10"
+    "date": "2025-02-10T00:00:00"
   },
   {
     "id": "5",
     "slug": "deploying-fullstack-apps",
     "title": "Deploying Full-Stack Apps: A Simple Guide",
     "excerpt": "Everything you need to know to deploy your frontend and backend together.",
-    "date": "2025-01-28"
+    "date": "2025-01-28T00:00:00"
   }
 ]
