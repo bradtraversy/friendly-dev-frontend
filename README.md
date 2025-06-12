@@ -1,87 +1,78 @@
-# Welcome to React Router!
+# Friendly Dev Frontend Website
 
-A modern, production-ready template for building full-stack React applications using React Router.
+This is a portfolio and blog website built as part of the **"Modern React From The Beginning"** course. It is a **React Router v7 Framework** app that demonstrates modern React best practices.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+<img src='/public/images/screen.png' alt='' />
 
-## Features
+It includes:
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+- A dynamic **Projects Page** with filtering, sorting, and pagination.
+- A **Blog Section** powered by content from a **Strapi Headless CMS**.
+- Fully responsive UI using **Tailwind CSS**.
 
-## Getting Started
+The projects and blog posts are managed via a Strapi backend. The backend code is available in a separate repo: [Strapi Repo](https://github.com/bradtraversy/friendly-dev-backend)
 
-### Installation
+---
 
-Install the dependencies:
+## 🚀 Features
+
+- React Router v7
+- Fetching content from Strapi CMS
+- Dynamic route-based pages
+- Filtering and pagination for projects
+- Blog post metadata loading
+- Environment-based config with `.env`
+- Deployed-API friendly
+
+---
+
+## 🛠️ Setup & Usage
+
+### 1. Start or Deploy the Strapi API
+
+Make sure your Strapi backend is running either locally (`http://localhost:1337`) or deployed (e.g., on Render, Railway, etc.)
+
+### 2. Create a `.env` file
+
+Create a `.env` file in the root and add your API base URL:
+
+```
+VITE_API_URL="http://localhost:1337/api"
+VITE_STRAPI_URL="http://localhost:1337"
+```
+
+### 3. Install Dependencies
 
 ```bash
 npm install
 ```
 
-### Development
-
-Start the development server with HMR:
+4. Run the App
 
 ```bash
 npm run dev
 ```
 
-Your application will be available at `http://localhost:5173`.
+## MIT License
 
-## Building for Production
+MIT License
 
-Create a production build:
+Copyright (c) 2025 Traversy Media
 
-```bash
-npm run build
-```
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights  
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell  
+copies of the Software, and to permit persons to whom the Software is  
+furnished to do so, subject to the following conditions:
 
-## Deployment
+The above copyright notice and this permission notice shall be included in  
+all copies or substantial portions of the Software.
 
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR  
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,  
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE  
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER  
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,  
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN  
+THE SOFTWARE.
